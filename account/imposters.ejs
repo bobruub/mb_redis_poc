@@ -1,0 +1,18 @@
+<%# -------------------------------------------------------------------- %>
+<%# ShowME Page for connectivity debugging                               %>
+<%# -------------------------------------------------------------------- %>
+	{
+	  "responses": [{
+	  "inject": "<%- stringify(filename, 'account//showme.ejs') %>",
+	  "_behaviors": {
+			"wait": "function() { return Math.floor(Math.random() * 100) + 100; }"
+			}
+	  }],
+	  "predicates": 
+	  [
+			{ 
+				"contains": { "path": "showme" } 
+								
+			}
+		]
+	}

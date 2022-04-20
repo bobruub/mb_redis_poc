@@ -1,0 +1,9 @@
+info: [mb:12003] mountebank v1.9.0 now taking orders - point your browser to http://localhost:12003 for help
+warn: [mb:12003] Running with --allowInjection set. See http://localhost:12003/docs/security for security info
+info: [mb:12003] PUT /imposters
+info: [http:2525 **-- MB REDIS POC -- 2525 --**] Open for business...
+info: [http:2525 **-- MB REDIS POC -- 2525 --**] ::ffff:127.0.0.1:65292 => GET /showme
+info: [http:2525 **-- MB REDIS POC -- 2525 --**] ::ffff:127.0.0.1:65292 connecting to redis...
+info: [http:2525 **-- MB REDIS POC -- 2525 --**] ::ffff:127.0.0.1:65292 connected to redis...
+info: [http:2525 **-- MB REDIS POC -- 2525 --**] ::ffff:127.0.0.1:65292 userName2: [object Promise]
+info: [http:2525 **-- MB REDIS POC -- 2525 --**] ::ffff:127.0.0.1:65292 closing client

@@ -1,0 +1,30 @@
+function (request, state, logger) {
+	
+	const redis = require('redis');
+	const client = redis.createClient("127.0.0.1",6379);
+	logger.info("connecting to redis...");
+	client.connect();
+	logger.info("connected to redis...");
+	//var userName2 = client.sRandMember('names');
+	var userName2 = client.sRandMember('names');
+	logger.info('userName2: ' + userName2);
+
+	client.sRandMember('names').then(userName3 => {
+    	logger.info('------------->' + userName3);
+    	client.quit();
+	});
+	logger.info('closing client');
+	client.quit();
+
+	return {
+			headers: {
+				'Content-Type': 'text/html',
+				'Connection': 'Keep-Alive'
+			},
+			body: 
+"<!DOCTYPE html><html><body><h1>SVEN STATEMENTS ENRICHMENT ACCOUNT API STUB - showme test page</h1></body></html>"
+			
+																			                                  
+				
+		};	
+}
