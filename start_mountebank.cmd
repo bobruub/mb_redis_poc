@@ -1,1 +1,1 @@
-C:\_git\perf_sven_statement_enrichment\mb.cmd --configfile C:\_git\perf_sven_statement_enrichment\imposters.ejs --allowInjection --port 12003 --logfile c:\var\logs\mb_account_api.log
+C:\_git\mb_redis_poc\mb.cmd --configfile C:\_git\mb_redis_poc\imposters.ejs --allowInjection --port 12003 --logfile c:\var\logs\mb_account.log
