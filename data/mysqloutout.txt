@@ -1,0 +1,8 @@
+info: [http:2525 **-- MB REDIS POC -- 2525 --**] Open for business...
+info: [http:2525 **-- MB REDIS POC -- 2525 --**] ::ffff:127.0.0.1:49913 => GET /showme
+info: [http:2525 **-- MB REDIS POC -- 2525 --**] ::ffff:127.0.0.1:49913 1 - userName: null
+info: [http:2525 **-- MB REDIS POC -- 2525 --**] ::ffff:127.0.0.1:49913 connecting to mysql...
+info: [http:2525 **-- MB REDIS POC -- 2525 --**] ::ffff:127.0.0.1:49913 3 - userName: null
+info: [http:2525 **-- MB REDIS POC -- 2525 --**] ::ffff:127.0.0.1:49913 connected as id 350
+info: [http:2525 **-- MB REDIS POC -- 2525 --**] ::ffff:127.0.0.1:49913 results: billy bob
+info: [http:2525 **-- MB REDIS POC -- 2525 --**] ::ffff:127.0.0.1:49913 2 - userName: billy bob
