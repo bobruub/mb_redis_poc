@@ -1,0 +1,41 @@
+function (request, state, logger) {
+	
+	var mysql = require('mysql');
+  let userName = null;
+	let connection = mysql.createConnection({
+		host: '127.0.0.1',
+		user: 'username',
+		password: 'password',
+		database: 'ses'
+	});
+
+	logger.info("1 - userName: " + userName);
+	logger.info("connecting to mysql...");
+	connection.connect(function(err) {
+		if (err) {
+		  console.error('error connecting: ' + err.stack);
+		  return;
+		}
+	
+	connection.query("select name from names", function (error, results, fields) {
+			if (error) throw error; 
+			logger.info("results: " + results[0].name);
+			userName = results[0].name;
+			logger.info("2 - userName: " + userName);
+		  }); 
+		  logger.info('connected as id ' + connection.threadId);
+	}); 
+
+	logger.info("3 - userName: " + userName);
+	
+	return {
+			headers: {
+				'Content-Type': 'text/html',
+				'Connection': 'Keep-Alive'
+			},
+			body: 
+"<!DOCTYPE html><html><body><h1>MB API STUB - " + userName + " - showme test page</h1></body></html>"
+				
+		};	
+	
+}
